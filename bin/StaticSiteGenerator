@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+# The command line StaticSiteGenerator.
+
+$LOAD_PATH.unshift File.dirname(__FILE__) + '/../lib'
+require 'StaticSiteGenerator'
+require 'StaticSiteGenerator/exec'
+
+_exec = StaticSiteGenerator::Exec::StaticSiteGenerator.new()
+_exec.process_result
