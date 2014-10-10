@@ -1,10 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'StaticSiteGenerator/version'
+require 'ssg/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "StaticSiteGenerator"
+  spec.name          = "SSG"
   spec.version       = StaticSiteGenerator::VERSION
   spec.authors       = ["Bryan J Stockus"]
   spec.email         = ["bstockus@gmail.com"]

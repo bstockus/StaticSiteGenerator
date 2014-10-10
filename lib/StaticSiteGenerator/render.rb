@@ -114,7 +114,7 @@ module StaticSiteGenerator
           str = ""
           @required_styles.each {|style_name|
             style = @base.get_style style_name
-            str += "<link rel='stylesheet' href='" + style.get_results_path + "'>\n"
+            str += "<link rel=\"stylesheet\" href=\"" + style.get_results_path + "\">\n"
           }
           return str
         else
@@ -127,7 +127,7 @@ module StaticSiteGenerator
           str = ""
           @required_scripts.each {|script_name|
             script = @base.get_script script_name
-            str += "<script type='text/javascript' src='" + script.get_results_path + "'></script>\n"
+            str += "<script type=\"text/javascript\" src=\"" + script.get_results_path + "\"></script>\n"
           }
           return str
         else

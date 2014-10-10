@@ -5,7 +5,7 @@ module StaticSiteGenerator
 
     class StaticSiteGenerator
 
-      # Process any command line options, and run the StaticSiteGenerator
+      # Process any command line options, and run the SSG
       def process_result
         engine = ::StaticSiteGenerator::Engine::Engine.new(Dir.getwd)
         engine.perform
